@@ -6,7 +6,7 @@ body{
     background-image: url("images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    
+    font-family: 'Unica One';
 }
 #sidebar{
     display: flex;
@@ -24,7 +24,7 @@ body{
     color: white;
     text-shadow: 2px 2px 10px #000000;
     padding-top: 15rem;
-    font-size: 6rem;
+    font-size: calc(5vw + 5vh);
     padding-left: 2rem;
     padding-right: 2rem;
 }
@@ -44,15 +44,94 @@ body{
     background-color: #0000002f;
     box-shadow: 0 0 15px;
     flex-grow: 1;
+    display: flex;
+    align-items: center;
     
 }
 #formDiv{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #0000008f;
     color: white;
     padding: 1rem;
+    flex-grow: 1;
+    padding: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    padding-left: 4rem;
 }
-form>div{
+#formDiv>h1{
+    font-size: 3rem;
+}
+
+form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#formContent{
+    display: flex;
+}
+#formDivCol1{
+    display: flex;
+    flex-direction: column;
+}
+#formDivCol1>div{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-left: 0;
+}
+#formDivCol2>div{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+form>button{
+    padding: 1rem;
+    background-color:limegreen;
+    font-family: 'Unica One';
+    font-weight: bolder;
+    color: white;
+    text-shadow: 2px 2px 10px #000000;
+    display: flex;
+    width:fit-content;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-radius: 12px;
+    border-style: none;
+}
+form>button:hover{
+    padding: 1rem;
+    background-color:rgb(44, 175, 44);
+    font-family: 'Unica One';
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 1px 5px #000000;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+input{
+    font-size: 18px;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+
+}
+input:not(:placeholder-shown):invalid{
+    border-style: solid;
+    border-color: red;
+}
+input:focus{
+    border-style: solid;
+    outline: none;
+    border-color:cornflowerblue;
+    box-shadow: 2px 2px 10px #000000;
+}
+input:valid{
+    border-style: solid;
+    border-color: rgb(44, 175, 44);
 }
